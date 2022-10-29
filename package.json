@@ -1,7 +1,7 @@
 {
   "name": "aframe-pwa-for-oculus",
   "version": "1.0.1",
-  "description": "An Aframe App for Oculus",
+  "description": "An AFrame App for Oculus",
   "homepage": "https://github.com/JackPu/aframe-pwa-for-oculus#readme",
   "main": "index.js",
   "scripts": {
@@ -33,7 +33,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "phaser": "^3.55.2"
+    "aframe": "^1.3.0"
   },
   "devDependencies": {
     "@yandeu/prettier-config": "^0.0.3",

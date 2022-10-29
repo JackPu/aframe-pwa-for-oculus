@@ -18,11 +18,8 @@
     <meta name="apple-mobile-web-app-title" content="<%= htmlWebpackPlugin.options.gameName %>" />
     <meta name="msapplication-starturl" content="./" />
 
-    <link rel="icon" type="image/png" sizes="192x192" href="./icons/icons-192.png" />
-    <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="./icons/icons-192.png" />
-
-    <link rel="icon" type="image/png" sizes="512x512" href="./icons/icons-512.png" />
-    <link rel="apple-touch-icon" type="image/png" sizes="512x512" href="./icons/icons-512.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/icons/android-icon-192x192.png">
 
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 
@@ -52,13 +49,18 @@
 
     <a-scene>
       <a-assets>
-        <video id="video" autoplay loop="true" src="./assets/vrtest.mp4"> </video>
+        <video id="video" loop="true" src="./assets/vrtest.mp4"> </video>
+        <img id="my-image" src="./assets/cover.jpg">
       </a-assets>
-      <a-entity position="0 0 -2" id="box" cursor-listener geometry="primitive: box" material="color: blue"></a-entity>
       <a-plane cursor-listener id="button" position="0 0 -10" color="#555" height="1" width="2"></a-plane>
       <a-text position="0 0 -10" align="center" value="Play Video"></a-text>
-      <a-video src="#video" width="16" height="9" position="0 0 -20"></a-video>
+      <a-image width="16" height="9" position="0 0 -20" src="#my-image"></a-image>
+      <a-entity id="video-container" visible="false">
+        <a-videosphere radius="50" src="#video" position="0 0 0"></a-videosphere>
+      </a-entity>
+
       <a-sky color="#ddd"></a-sky>
     </a-scene>
+
   </body>
 </html>
