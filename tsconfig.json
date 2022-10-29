@@ -7,16 +7,14 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-
     "allowJs": true,
     "allowUnreachableCode": false,
     "noImplicitAny": false,
     "sourceMap": true,
     "strictPropertyInitialization": false,
-
     "moduleResolution": "node",
     "lib": ["dom", "esnext"]
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "src/**/*.d.ts"],
   "exclude": ["node_modules", "**/*.spec.ts"]
 }

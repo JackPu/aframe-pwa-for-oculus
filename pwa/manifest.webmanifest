@@ -1,0 +1,15 @@
+{
+  "short_name": "AFrame Meta Quest Demo",
+  "name": "AFrame-PWA",
+  "icons": [
+    {
+      "src": "./icons/apple-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "landscape",
+  "scope": "./"
+}
